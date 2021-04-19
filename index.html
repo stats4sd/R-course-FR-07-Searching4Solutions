@@ -116,61 +116,60 @@ $(document).ready(function () {
 
 <div class="topics">
 
-<div id="section-overview" class="section level2">
-<h2>Overview</h2>
-<p>We are now reaching the end of this R course. If you’ve followed through all the workbooks and done all the exercises, you should be able to do a lot of things in R. And hopefully you start to feel at ease with this programming language and the RStudio interface.</p>
-<p>That is not to say that the journey is over though. We’ve only covered a tiny fraction of all the things one can do with R! This fraction was aimed at preparing you for the rest of the journey. One where you continue learning on your own, by searching online for solutions, reading bits of documentations and finding where to ask for help. And you will do that a lot. Trust us. We’re still doing that constantly. In this page, we’ll explain you how we proceed, and show you a few additional R commands along the way.</p>
+<div id="section-vue-densemble" class="section level2">
+<h2>Vue d’ensemble</h2>
+<p>Nous arrivons maintenant à la fin de ce cours R. Si vous avez suivi tous les tutoriels et fait les exercices, vous devriez être capable de faire beaucoup de choses avec R. Et j’espère que vous commencez à vous sentir à l’aise avec ce langage de programmation et l’interface RStudio.</p>
+<p>Cela ne veut pas dire que le voyage est terminé. Nous n’avons couvert qu’une infime partie de tout ce que l’on peut faire avec R ! Cette fraction visait à vous préparer pour le reste du voyage. Celui où vous continuez à apprendre par vous-même, en recherchant des solutions en ligne, en lisant des bouts de documentations et en trouvant où demander de l’aide. Et vous ferez beaucoup cela. Faites nous confiance. Nous faisons cela constamment. Dans cette page, nous vous expliquons comment nous procédons et vous montrons quelques commandes R supplémentaires en cours de route.</p>
 </div>
-<div id="section-finding-solutions-online" class="section level2">
-<h2>Finding solutions online</h2>
-<p>What is great with R is that it has a large community of very helpful people. So in general, for most problems related to R, it is possible to find a solution online. You can find solutions in many different places: Q&amp;A sites, forums, blog posts, tutorials, package documentations, online books, cheatsheets, videos, …</p>
-<p>The simplest is usually to start with a search engine like <a href="https://www.google.co.uk/" target="_blank">Google</a>, or <a href="https://rseek.org/" target="_blank">Rseek</a>. For the former, since it is not R-specific, it is important to always add the letter <code>R</code> in your search.</p>
-<p>What to write in the search box depends of the type of problem that you are facing, whether you have an error, or you can’t find how to do something.</p>
-<p><strong>If you have an error</strong></p>
-<p>If your problem is that R gives you an error, the first thing you should do is try to understand what the error means, check things like spelling errors and brackets, and have a go at things you suspect might fix the issue. If it doesn’t work, copy the error (don’t copy names, paths or other things that seem specific to your computer though!), go to your search engine, and paste the error. Add quotes around it. Add ‘R’ in front if you’re not on Rseek, and if you suspect the issue is related to a specific function, add the name of the function in your search. Click search!</p>
-<p>But the hardest part in fixing errors is usually not the search. It is more to understand the answers, decide whether they are relevant or not for your specific case and choosing which of the solutions to try. The same error can sometimes come from very different reasons so it is a bit of a trial and error. Even though it is often tempting to quickly try out every solutions you can find, the best in the long run is to take your time, read more about the why of each promising answer and keep note of your findings. That will make you much better at solving future errors. If you struggle a lot at the beginning, it’s probably because you are not yet used to the most common errors, in which case, <a href="https://ourcodingclub.github.io/tutorials/troubleshooting/" target="_blank">this tutorial</a> on how to avoid common mistakes in R might be helpful.</p>
-<p><strong>If you don’t know how to do something in R</strong></p>
-<p>If your problem is not an error, but simply something you want to do in R, but don’t know how, go to your search engine and make your search skills shine! In the next section, I show you how I proceed:</p>
+<div id="section-trouver-des-solutions-en-ligne" class="section level2">
+<h2>Trouver des solutions en ligne</h2>
+<p>Ce qui est vraiment bien avec R, c’est qu’il a une grande communauté de personnes qui sont très contente d’aider ceux qui ont des soucis. Donc en général, pour la plupart des problèmes liés à R, il est possible de trouver une solution en ligne. Vous pouvez trouver des solutions dans de nombreux endroits différents: sites de questions-réponses, forums, articles de blog, tutoriels, documentations de packages, livres en ligne, cheatsheets, vidéos, …</p>
+<p>Le plus simple est généralement de commencer avec un moteur de recherche comme <a href="https://www.google.fr/" target="_blank">Google</a>, ou <a href="https://rseek.org/" target="_blank">Rseek</a>. Pour le premier, puisqu’il n’est pas spécifique à R, il est important de toujours ajouter la lettre <code>R</code> dans votre recherche.</p>
+<p>Ce qu’il faut écrire dans le champ de recherche dépend du type de problème auquel vous êtes confronté, cela peut etre une erreur a resoudre ou simplement que vous ne trouvez pas comment faire quelque chose.</p>
+<p><strong>Si vous avez une erreur</strong></p>
+<p>Si votre problème est que R vous donne une erreur, la première chose que vous devez faire est d’essayer de comprendre ce que signifie l’erreur, de vérifier qu’il n’y a pas de faute de frappe dans le nom des fonctions et autres objets utilisés, que les guillemets sont bien fermés et que tous les package que vous utilisez sont bien installés et chargés. Investiguez ce qui selon vous pourrent résoudre le problème. Si cela ne fonctionne pas, copiez l’erreur (ne copiez pas les noms d’objets, les chemins ou autres choses qui semblent spécifiques à votre ordinateur par contre !), Accédez à votre moteur de recherche et collez l’erreur. Ajoutez des guillemets autour. Ajoutez ‘R’ devant si vous n’êtes pas sur Rseek, et si vous pensez que le problème est lié à une fonction spécifique, ajoutez le nom de la fonction dans votre recherche. Cliquez sur Recherche !</p>
+<p>Mais le plus difficile lorsque l’on essaye de corriger des erreurs n’est généralement pas la recherche. Il s’agit davantage de comprendre les réponses, de décider si elles sont pertinentes ou non pour votre cas spécifique et de choisir laquelle des solutions essayer. Le même message d’erreur peut parfois avoir plusieurs raisons possibles très différents, on doit donc souvent avancer en tatonnant. Même s’il est souvent tentant d’essayer rapidement toutes les solutions que vous pouvez trouver, le mieux à long terme est de prendre votre temps, d’en savoir plus sur le pourquoi de chaque réponse prometteuse et de prendre soing de noter ce que vous avez trouvé. Cela vous permettra de mieux résoudre les erreurs futures. Si vous avez beaucoup de mal au début, c’est probablement parce que vous n’êtes pas encore habitué aux erreurs les plus courantes, auquel cas, <a href = "https://ourcodingclub.github.io/tutorials/troubleshooting/" target = " _blank "> ce didacticiel </a> expliquant comment éviter les erreurs courantes dans R pourrait être utile.</p>
+<p><strong>Si vous ne savez pas comment faire quelque chose dans R</strong></p>
+<p>Si votre problème n’est pas une erreur, mais simplement quelque chose que vous voulez faire dans R, mais que vous ne savez pas comment, allez sur votre moteur de recherche et faites briller votre habilite a effectuer des bonnes recherches ! Dans la section suivante, je vous montre comment je procède:</p>
 </div>
-<div id="section-example" class="section level2">
-<h2>Example</h2>
-<p>As an example, I’d like to combine the interview2019 dataset that we have used in the Merge/Reshape workbook with a similar fictive dataset, supposedly collected one year later. Both datasets contain similar columns, but not the same individuals. We’ve seen how we could use the <code>_join</code> functions to merge columns from different data frames, but here what I want is to combine rows instead of columns - ie: place one data frame below another. If I had no clue how to proceed, I would type in my search engine something like <em>how to combine two data frames in r</em>, or <em>r combining datasets</em>, etc. Note that I would generally not use any quotes, at least at first.</p>
-<p>Here are the first results I got from Google for <em>how to combine two dataframes in r</em> (note that I wrote <em>dataframes</em> instead of <em>data frames</em>. I often write it this way, even though the latter is probably more correct. But Google didn’t mind):</p>
-<p><img src="images/GoogleSearch.PNG" width="80%" style="display: block; margin: auto;" /></p>
-<p>The first thing I notice - and you will as well with time - is that I know two of the websites. The <a href="https://www.statmethods.net/management/merging.html" target="_blank">first link</a> is from the <strong>Quick-R</strong> website, which usually gives simple short R commands for a number of basic tasks. If there is an answer for my request there, I will have it quickly. And the <a href="https://stackoverflow.com/questions/8169323/r-concatenate-two-dataframes" target="_blank">third link</a> is from <strong>Stack Overflow</strong>, which is a question/answer site that is not specific to R, but a lot of people ask R-related questions there. You usually have to dig in a bit more to find the commands you need, but if your problem is complex or niche, you’re definitely more likely to find some answers there than on Quick-R.</p>
-<p>It turns out my question is pretty basic and if I click on the Quick-R link I get to the following page</p>
-<p><img src="images/Quick-R.PNG" width="80%" style="display: block; margin: auto;" /></p>
-<p>I can read towards the bottom of the page:</p>
+<div id="section-exemple" class="section level2">
+<h2>Exemple</h2>
+<p>À titre d’exemple, j’aimerais combiner l’ensemble de données interview2019 que nous avons utilisé dans le tutoriel “Joiture at formats long et large” avec un tableau de données fictif similaire, censé être collecté un an plus tard. Les deux ensembles de données contiennent des colonnes similaires, mais pas les mêmes individus. Nous avons vu comment nous pourrions utiliser les fonctions <code>_join</code> pour fusionner des colonnes de différents tableaux de données, mais ici ce que je veux, c’est combiner des lignes au lieu de colonnes - c’est-à-dire: placer le deuxieme tableau de données en dessous du premier. Si je n’avais aucune idée de la façon de procéder, je taperais dans mon moteur de recherche quelque chose comme <em>comment combiner deux tableaux de donnees avec R ?</em> Notez que je n’utiliserais généralement pas de guillemets, au moins au debut.</p>
+<p>Voila alors les trois premiers liens que google me propose :</p>
+<p><img src="images/GoogleSearchFR.PNG" width="80%" style="display: block; margin: auto;" /></p>
+<p>La premiere chose que je remarque est que je connais ces trois sites. Le premier, sthda.com est un site avec des pages donnant des commandes R pour differents sujets. Il a des articles en Anglais et en Francais qui sont generalement plutot courts et directs. Si il contient une solution a notre probleme. on devrait en general la trouver assez rapidement. Les deuxiemes et troisiemes sites (larmarange et openclassrooms) sont deux cours d’introduction a R en ligne et en Francais. Ils donnent generalement un peu plus d’explications et d’examples.</p>
+<p>Il se trouve que le premier site nous donne deja une premiere solution possible. En effet, la page a un probleme de formatage, mais si on s’y penche un peu, on peut voir que la table des matieres contient deux choses: “Ajouter des colonnes” et “Ajouter des lignes”. Pour notre probleme, c’est plutot ajouter des lignes qui nous interesse. En dessous nous avons deux commandes. On se doute alors que la deuxieme commande est celle qui pourrait nous interesser, surtout lorsqu’on lit ce qui y est ecrit:</p>
 <blockquote>
-<p>To join two data frames (datasets) vertically, use the <strong>rbind</strong> function. The two data frames <strong>must</strong> have the same variables, but they do not have to be in the same order".</p>
+<p>rbind(data frame A, data frame B) # ajoute data frame B à la suite de data frame A (en ligne).</p>
 </blockquote>
-<p>Sounds promising.</p>
-<p>You’ll notice that the information is minimal though. If I don’t manage to adapt the provided command to my needs, I’ll have to search elsewhere… but I now know that the function <code>rbind()</code> is a good candidate to solve my problem, so in addition to going back to my search result, I have a new option: typing the usual <code>?rbind</code> command in RStudio or search for something like “r rbind” in my search engine in order to find more documentation on this function. Anyway, let’s have a first try. But wait, do I need to load a library first? There’s no information about it on Quick-R. In general, if there’s no mention of a library, that’s because the function is a base-R function. A quick look at the R documentation (<code>?rbind</code>) would confirm that. And R will tell us something like ‘could not find function “rbind”’ if it was not the case, so we’ll find out.</p>
-<p>The command provided by Quick-R is:</p>
-<pre><code>total &lt;- rbind(data frameA, data frameB)</code></pre>
-<p>My data frames are <code>interview2019</code> and <code>interview2020</code>. And I’d like my final dataset to be called say, <code>interview</code>. So this should be my command:</p>
+<p>Donc la fonction <code>rbind()</code> semble prometeuse.</p>
+<p>Vous remarquerez cependant que les informations sont minimales. Si je n’arrive pas à adapter la commande fournie à mes besoins, je vais devoir chercher ailleurs … mais je sais maintenant que la fonction <code>rbind ()</code> est un bon candidat pour résoudre mon problème, donc en plus de revenir aux autres résultats de ma recherche initiale, j’ai une nouvelle option: taper la commande <code>?rbind</code> dans RStudio ou rechercher quelque chose comme <em>r rbind exemples</em> dans mon moteur de recherche afin de trouver plus de documentation et d’exemples sur cette fonction. Le mot <code>exemples</code> est important ici car sans lui, on risque d’avoir beaucoup de liens en Anglais. Ce qui est bien c’est qu’en Anglais, ‘exemple’ s’ecrit avec un ‘a’ (example) donc si on indique bien a notre moteur de recherche que l’on souhaite utiliser ‘exemple’ avec un ‘e’, alors les resultats de notre recherche seront probablement pour la plupart en francais.</p>
+<p>Quoi qu’il en soit, faisons un premier essai. Mais attendez, dois-je d’abord charger un package ? Il n’y a aucune information à ce sujet. En général, s’il n’y a aucune mention d’un package, c’est parce que la fonction est une fonction native de R. Un rapide coup d’œil à la documentation R (<code>?Rbind</code>) le confirmerait. Et R nous dira quelque chose comme ‘could not find function “rbind”’ si ce n’était pas le cas, donc nous le saurons.</p>
+<p>Donc le site ‘sthda’ nous indique que pour ajouter le data frame B à la suite du data frame A (en ligne) il faut utiliser la commande suivante :</p>
+<pre><code>rbind(data frame A, data frame B) </code></pre>
+<p>Mes tableaux de donnees sont <code>interview2019</code> and <code>interview2020</code> donc essayons ceci :</p>
 <div class="tutorial-exercise" data-label="bind1" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
-<pre class="text"><code>interview &lt;- rbind(interview2019, interview2020)</code></pre>
+<pre class="text"><code>rbind(interview2019, interview2020)</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"default","exercise.timelimit":10,"exercise.checker":"NULL"}</script>
 </div>
-<p>Argh, we get an error. Well we should get used to that because it will happen often. But we are not afraid of errors any more, right? Plus this one makes sense. Because Quick-R was pretty clear that:</p>
+<p>Argh, nous obtenons une erreur. Eh bien, nous devrions nous y habituer car cela arrivera souvent. Mais nous n’avons plus peur des erreurs, si? De plus, cette erreur la est logique. Parce que sthda était assez clair que:</p>
 <blockquote>
-<p>The two data frames <strong>must</strong> have the same variables, but they do not have to be in the same order.</p>
+<p>Les deux data frames <strong>doivent</strong> [avoir] les mêmes variables (les mêmes colonnes).</p>
 </blockquote>
-<p>And if we check back our column names, we can see that they are not the same:</p>
+<p>Et si nous vérifions nos noms de colonnes, nous pouvons voir qu’ils ne sont pas les mêmes:</p>
 <div class="tutorial-exercise" data-label="bind2" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>colnames(interview2019)
 colnames(interview2020)</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"default","exercise.timelimit":10,"exercise.checker":"NULL"}</script>
 </div>
-<p>The columns <code>Name</code> and <code>Accept</code> are in both datasets, but the variable Gender is only present in the <code>interview2019</code> dataset, while the variables <code>Age</code> and <code>Region</code> can only be found in the <code>interview2020</code> dataset.</p>
-<p>One solution is to get rid of these three columns using <code>select()</code>. We could indicate the names of the columns we want to keep, as usual, but we can also remove the ones we don’t want using the minus sign:</p>
+<p>Les colonnes <code>Name</code> et <code>Accept</code> sont présentes dans les deux tableaux de données, mais la variable <code>Gender</code> n’est présente que dans le tableau de données <code>interview2019</code>, tandis que les variables <code>Age</code> et <code>Region</code> ne sont présentes que dans le tableau de données <code>interview2020</code>.</p>
+<p>Une solution est de se débarrasser de ces trois colonnes en utilisant <code>select()</code>. Nous pourrions indiquer les noms des colonnes que nous voulons conserver, comme d’habitude, mais nous pouvons également supprimer celles que nous ne voulons pas en utilisant le signe moins:</p>
 <div class="tutorial-exercise" data-label="bind3" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>interview2019_reduced &lt;- select(interview2019, -Gender)
 interview2020_reduced &lt;- select(interview2020, -Age, -Region)</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"default","exercise.timelimit":10,"exercise.checker":"NULL"}</script>
 </div>
-<p>Let’s try again our <code>rbind</code> command, and add a little <code>slice</code> command to have a look at the five first rows:</p>
+<p>Essayons à nouveau notre commande <code>rbind</code>, et ajoutons une petite commande<code>slice</code> pour voir les cinq premières lignes:</p>
 <div class="tutorial-exercise" data-label="bind4" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>interview_reduced &lt;- rbind(interview2019_reduced, interview2020_reduced)
 
@@ -178,28 +177,23 @@ interview_reduced %&gt;%
   slice(1:5)</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"default","exercise.timelimit":10,"exercise.checker":"NULL"}</script>
 </div>
-<p>Yay, there’s no error! In RStudio, I would then check the Environment window:</p>
+<p>Oui ! Il n’y a pas d’erreur! Dans RStudio, je vérifierais ensuite la fenêtre d’environnement :</p>
 <p><img src="images/Environment.JPG" width="70%" style="display: block; margin: auto;" /></p>
-<p>71 obs. + 60 obs. = 131 obs. and we still have 2 variables. Sounds good. This is only a quick check and you should also click on the little blue icon next to each dataset in your environment window, as well as producing a few summaries, but it will do for this session.</p>
-<div id="section-getting-a-better-solution" class="section level3">
-<h3>Getting a better solution</h3>
-<p>I can tell you now that <code>rbind()</code> is not necessarily the function I would have chosen. It works well here, but there exists other functions that are more flexible, and so I’d tend to use these instead. It all depends on your needs. If you just need a quick one-time fix, just go for the first command that works for you. But if your think your problem is likely to come up regularly in various form, or you can sense that you will struggle to get what you really want, then, it may be worth spending a bit more time in your search, to find an equally good solution, but a solution that will save you time and effort in the long run.</p>
-<p>In my case, I want to keep all my columns and I’d also like to have a column in my new data frame that keeps track of the origin of each row - ie: interview2019 or interview2020. I know with a bit of work I can achieve that with <code>rbind()</code>, but if I have a lot of different datasets to bind, it’s going to be a bit painful. And I’m sure you would realise that too after reading more about <code>rbind()</code>.</p>
-<p>So back to our search engine. If we click on the second link, we get the online version of the R documentation for the function <code>merge()</code>. The R documentation is rarely the best place to go to when we don’t know what function we need to use. And for information, <code>merge()</code> is the base-R alternative to some of the <code>_join</code> functions, so it’s not useful here. Again, we don’t want to merge columns, but to combine rows! Now the third link gets us to the following question in Stack Overflow:</p>
-<p><img src="images/Stack1.PNG" width="100%" style="display: block; margin: auto;" /></p>
-<p>And the most popular response is the same as what we got from Quick-R, only with some example matching the question. You’ll often find examples on Stack Overflow: <img src="images/Stack2.PNG" width="100%" style="display: block; margin: auto;" /></p>
-<p>But did you look at the date? The question was asked nearly 9 years ago! That doesn’t mean the answers are bad, but we can assume that there are new functions to do the task, some of which may be better. Going down the thread of responses, there are actually some nice relatively recent answers, but a good trick to get up to date solutions is to limit search to the past year or so in your search engine. In addition, the first search gave me some new keyword to consider. Maybe <em>bind</em> is a better word than <em>combine</em>. So let’s try…</p>
-<p><img src="images/GoogleSearch2.PNG" width="80%" style="display: block; margin: auto;" /></p>
-<p>Somehow I recognize again the first and third results. The first link brings us to the documentation of <code>dplyr</code>, where we see that the function <code>bind_rows()</code> might be a new good candidate. Especially as we are already familiar with <code>dplyr</code>.</p>
-<p><img src="images/dplyr.PNG" width="100%" style="display: block; margin: auto;" /></p>
-<p>The third link is from the RStudio Community, which has become an alternative to Stack Overflow in recent years. Anyway. I want to try the function <code>bind_rows</code>, because when I scroll down on the first link I can see in the examples that I can combine rows even if the columns don’t match:</p>
-<p><img src="images/dplyr2.PNG" width="100%" style="display: block; margin: auto;" /></p>
-<p>Plus there is this <code>.id</code> argument that seems to do exactly what I want to keep track of the original data frames:</p>
-<p><img src="images/dplyr3.PNG" width="100%" style="display: block; margin: auto;" /></p>
-<p>The basic command seems to be very similar to rbind.</p>
-<pre><code>interview &lt;- bind_rows(interview2019, interview2020)
-</code></pre>
-<p>And it seems like the argument .id just requires we give a name to the column that will keep track of the original datasets. ‘dataset’ sounds like a good name. Let’s try:</p>
+<p>71 obs. + 60 obs. = 131 obs. et nous avons encore 2 variables. Ça a l’air bon. Ce n’est qu’une vérification rapide et vous devriez également cliquer sur la petite icône bleue à côté de chaque tableau de données dans votre fenêtre d’environnement, ainsi que produire quelques résumés statistique, mais cela fera l’affaire pour cette session.</p>
+<div id="section-trouver-une-meilleure-solution" class="section level3">
+<h3>Trouver une meilleure solution</h3>
+<p>Je peux vous avouer maintenant que <code>rbind ()</code> n’est pas forcément la fonction que j’aurais choisie. Cela fonctionne bien ici, mais il existe d’autres fonctions plus flexibles, et j’aurais donc tendance à les utiliser à la place. Tout dépend de vos besoins. Si vous avez juste besoin d’une solution rapide a utiliser une fois et c’est tout, alors optez simplement pour la première commande R qui fonctionne pour vous. Mais si vous pensez que votre problème est susceptible de se présenter régulièrement sous diverses formes, ou si vous avez le sentiment que vous aurez du mal à obtenir ce que vous voulez, alors, cela peut valoir la peine de passer un peu plus de temps dans votre recherche, pour trouver une solution qui marche également, mais qui en plus vous fera gagner du temps et de l’energie sur le long terme.</p>
+<p>Dans mon cas, je souhaite conserver toutes mes colonnes et j’aimerais également avoir une colonne dans mon nouveau tableau de données qui garde une trace de l’origine de chaque ligne - c’est-à-dire: interview2019 ou interview2020. Je sais qu’avec un peu de travail, je peux y parvenir avec <code>rbind ()</code>, mais si j’ai beaucoup de tableaux de données à combiner, ça va être un peu pénible. Et je suis sûr que vous vous en rendrez compte aussi après avoir lu plus d’informations sur <code>rbind()</code>.</p>
+<p>Revenons donc à notre moteur de recherche. Une chose avec laquelle vous pouvez jouer, c’est de limiter les resultat a ceux qui sont recents - qui datent de moins d’un an par exemple. Cela permet de s’assurer que les lien proposees par notre moteur de cherche ont conscience de l’existence des packages importants les plus recents. D’experience cela est une restriction de recherche assez efficace lorsque l’on cherche de l’aide en Anglais ou il existe de nombreuses reponses sur les forums d’aide (notamment <a href="https://stackoverflow.com/">stackoverflow.com</a>) qui commencent a dater, mais ca l’est moins en Francais ou les liens ont plus tendance a etre des articles de blog ou des cours en ligne. Si vous comprenez un peu l’anglais, cela peut aussi etre utile de tenter des recherches en anglais, car il y a quand meme plus d’options de resources et stackoverflow est une mine d’or pour les recherches plus niches.</p>
+<p>Mais dans notre cas, nous n’avons pas besoin d’aller jusque la. Si vous cliquez sur le second lien de notre recherche, vous arriverez sur une des pages du site <strong>analyse-R</strong> de Joseph Larmarange. Sur la droite, vous verrez une sorte de table des matieres de la page qui indique les differentes sections : “La fonction merge et les jointures”, “Jointures avec dplyr”, “jointures avec data.table” et “Ajouter des observation”.</p>
+<p><img src="images/analyseR_1.PNG" width="80%" style="display: block; margin: auto;" /></p>
+<p>Les jointures est ce dont nous avons deja parle dans un autre tutoriel. Cela sert a joindre des tableaux de donnees horizontalement. Par contre “ajouter des observations” semble prometeur. C’est bien ca que l’on veut faire en combinant nos deux tableaux de donnees. Lorsque l’on se rend a cette section on voit un premier encadre intitule ‘IMPORTANT’ :</p>
+<p><img src="images/analyseR_2.PNG" width="80%" style="display: block; margin: auto;" /></p>
+<p>Ah ben voila ! Ce site nous deconseille d’utiliser la fonction <code>rbind()</code>. A la place il nous propose la fonction <code>bind_rows()</code> qui se trouve etre fourni avec le package dplyr. Ca c’est cool ! Essayons ca. Alors. si l’on descend un peu on trouve l’endroit ou donnant la syntaxe de <code>bind_rows()</code>.</p>
+<p><img src="images/analyseR_3.PNG" width="80%" style="display: block; margin: auto;" /></p>
+<p>Cela semble assez simple. Et si l’on descend un peu plus on voit meme que l’on peut “’”garder une trace du tableau d’origine de chacune des lignes" grace a l’argument <code>.id</code></p>
+<p><img src="images/analyseR_4.PNG" width="80%" style="display: block; margin: auto;" /></p>
+<p>Bon il est temps d’essayer.</p>
 <div class="tutorial-exercise" data-label="bind5" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>interview &lt;- bind_rows(interview2019, interview2020, .id = &quot;dataset&quot;)
 
@@ -207,9 +201,9 @@ interview %&gt;%
   slice(1:5)</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"default","exercise.timelimit":10,"exercise.checker":"NULL"}</script>
 </div>
-<p>Checking the number of rows (131) and variables (6) in the environment window, I think it worked!</p>
+<p>On verifie le numbre de lignes (131) et de colonnes (6) dans la fenêtre d’environnement. Je pense que cela a marché !</p>
 <p><img src="images/Environment2.PNG" width="70%" style="display: block; margin: auto;" /></p>
-<p>So were farmers more inclined to participate in a new experiment in 2020 compared to 2019?</p>
+<p>Les agriculteurs étaient-ils donc plus enclins à participer à une nouvelle expérience en 2020 par rapport à 2019?</p>
 <div class="tutorial-exercise" data-label="bind6" data-caption="Code" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>interview %&gt;%
   tabyl(dataset, Accept) %&gt;%
@@ -217,42 +211,40 @@ interview %&gt;%
       adorn_pct_formatting()</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"default","exercise.timelimit":10,"exercise.checker":"NULL"}</script>
 </div>
-<p>Not much.</p>
+<p>Pas vraiment.</p>
 </div>
-<div id="section-find-what-works-for-you" class="section level3">
-<h3>Find what works for you</h3>
-<p>The aim of this example was to give you an idea of how I proceed. But you should explore and see what works for you. Because there are lots of other ways you could proceed, some of which I am not aware of. For example, I just discovered this function called <code>findFn()</code> from the <code>sos</code> package that searches the help pages of R packages. The syntax is simple. You just write keywords within the function and surround the whole text by quotes. It then opens a webpage with the results. I typed the following command</p>
-<pre><code>findFn(&quot;combine data frames&quot;)</code></pre>
-<p>And I got this:</p>
-<p><img src="images/findFn.PNG" width="100%" style="display: block; margin: auto;" /></p>
-<p>A long list of functions, their respective packages, a brief description with a link to the help documentation, and you can sort the results by various scores. You can learn more about the package <code>sos</code> from its vignette <a href="https://cran.r-project.org/web/packages/sos/vignettes/sos.pdf" target="_blank">here</a>.</p>
-<p>Oh yeah, I didn’t talk about vignettes. As we’ve seen, every decent package comes with at least a basic documentation of its functions that you can then access via <code>?</code>. But it is not very friendly and not useful at all if you don’t know the function you want to use. Developers are also encouraged to write long-form friendly guides called ‘vignettes’ that often take the form of a tutorial or article going over the most important capabilities of the package. When they exist - and they usually do for good packages - I find vignettes to be the best way to get a good idea of what a package has to offer. Typing “r vignette name-of-the-package” in your search engine will usually get you to its vignette(s). Otherwise, if you have the package installed on your computer, you can type this command:</p>
+<div id="section-trouvez-ce-qui-fonctionne-pour-vous" class="section level3">
+<h3>Trouvez ce qui fonctionne pour vous</h3>
+<p>Le but de cet exemple était de vous donner une idée de la façon dont je procède. Mais vous devriez explorer et voir ce qui fonctionne pour vous. Parce qu’il existe de nombreuses autres façons de procéder, certaines dont je n’ai pas conscience. Par exemple, je viens de découvrir la fonction appelée <code>findFn ()</code> du package <code>sos</code> qui recherche les pages d’aide des packages R. La syntaxe est simple. Vous écrivez simplement des mots-clés dans la fonction et entourez tout le texte de guillemets. Il ouvre ensuite une page Web avec les résultats. Il faut par contre mettre des mots cles en anglais, car l’aide de R est en Anglais. Vous pouvez en apprendre plus sur le paquet <code>sos</code> dans sa vignette <a href="https://cran.r-project.org/web/packages/sos/vignettes/sos.pdf" target="_blank">ici</a>.</p>
+<p>Oh oui, je n’ai pas parlé des vignettes encore. Comme nous l’avons vu, chaque paquet décent est livré avec au moins une documentation de base de ses fonctions à laquelle vous pouvez ensuite accéder via <code>?</code>. Mais ce n’est pas très convivial et pas du tout utile si vous ne connaissez pas la fonction que vous souhaitez utiliser. Les développeurs sont également encouragés à rédiger des guides conviviaux plus longs appelés «vignettes» qui prennent souvent la forme d’un tutoriel ou d’un article passant en revue les fonctionnalités les plus importantes du package. Lorsqu’elles existent - et c’est généralement le cas pour les bons packages - je trouve que les vignettes sont le meilleur moyen d’avoir une bonne idée de ce qu’un package a à offrir. Taper “r vignette nom-du-package” dans votre moteur de recherche vous amènera généralement à sa(ses) vignette(s). Sinon, si le package est installé sur votre ordinateur, vous pouvez taper cette commande:</p>
 <pre><code>vignette(&quot;name-of-the-package&quot;)</code></pre>
+<p>Les vignettes sont en anglais en general, mais souvent elles resent utiles pour les nombreux exemples meme pour ceux qui ne sont familier avec l’Anglais.</p>
 </div>
 </div>
-<div id="section-asking-for-help" class="section level2">
-<h2>Asking for Help</h2>
-<p>You should always start by looking for solutions on your own. It’s how you learn the most. But at some point, if you can’t solve your problem, you should probably consider the next step: asking for help.</p>
-<p>There are a few places where you can ask for help.</p>
+<div id="section-demander-de-laide" class="section level2">
+<h2>Demander de l’aide</h2>
+<p>Vous devriez toujours commencer par chercher des solutions par vous-même. C’est ainsi que vous apprenez le plus. Mais à un moment donné, si vous n’arrivez pas a résoudre votre problème, vous devriez probablement envisager l’étape suivante: demander de l’aide.</p>
+<p>Il y a plusieurs endroits où vous pouvez demander de l’aide :</p>
 <p><strong>RMS!</strong></p>
-<p>First, there is us, RMS. We are paid to support you, so you should not hesitate to contact us when you need help. More specifically within RMS, the people that should be able to help are Sam, Shiphar, Nuru or Ric, as they are all using R extensively in their work. But you can also simply contact the person that you know. Maybe it’s Carlos if you’re in the Andes, and they will find the best person to answer the question. You can find our email addresses on our Stats4SD’s team page: <a href="https://stats4sd.org/team" class="uri">https://stats4sd.org/team</a>.</p>
-<p><strong>R-help</strong></p>
-<p>The more or less <em>official</em> place to ask for help is the R-help mailing list. You send your question to <code>r-help@r-project.org</code> and some people from the R community will likely respond to you within a day or two, and sometimes just a couple of hours, depending on the question. You should subscribe to the mailing list <a href="https://stat.ethz.ch/mailman/listinfo/r-help" target="_blank">here</a> though. Otherwise you’ll have to wait the approval of moderators.</p>
-<p>Also very important, read the <a href="https://www.r-project.org/posting-guide.html" target="_blank">posting guide page</a>! It may feel like too much effort for a simple question, but it’s an investment for the future. You’re building an expertise on how to ask questions that have good chances to receive useful answers. This will save you tons of time in the long run. Plus it helps the community of helpers as well as all the people who will have similar problems and will be able to find a solution thanks to your nicely framed question. You’ll make a ton of people grateful if you follow the guidelines!</p>
+<p>Premièrement, il y a nous, le support en methode de recherche (RMS). Nous sommes payés pour vous soutenir, alors n’hésitez pas à nous contacter lorsque vous avez besoin d’aide. Plus précisément au sein de RMS, les personnes qui devraient être les plus en mesure de vous aider sont Joris (<a href="mailto:joris@stats4sd.org" class="email">joris@stats4sd.org</a>) et Sam (<a href="mailto:s.dumble@stats4sd.org" class="email">s.dumble@stats4sd.org</a>). Joris parle francais, pas Sam, meme si il est assez bon en google translate ! Mais vous pouvez aussi simplement contacter la personne que vous connaissez, peut-etre c’est Issouf, Francis, ou bien Roger. S’ils ne savent pas repondre, ils sauront trouver la meilleure personne pour répondre à la question. Vous pouvez trouver nos adresses e-mail sur notre page d’équipe Stats4SD: <a href="https://stats4sd.org/team" class="uri">https://stats4sd.org/team</a>, ou sur la page d’IDEMS, l’equipe de David <a href="https://www.idems.international/our-team/" class="uri">https://www.idems.international/our-team/</a>.</p>
+<p><strong><a href="http://forums.cirad.fr/logiciel-R/viewforum.php?f=3">Forum du Cirad</a></strong> Le forum du Cirad est un “Un forum <strong>francophone</strong> d’échange autour du logiciel de calcul statistique R” ou vous pouvez posez toutes les questions R que vous souhaitez apres vous y etre inscrit en suivant les indications <a href="http://forums.cirad.fr/logiciel-R/viewtopic.php?f=1&amp;t=631">ici</a>. Veillez d’avoir verifie que votre question n’a pas encore ete posee en faisant une recherche dans le forum.</p>
+<p><strong>Communaute grrr</strong> grrr est une communaute Slack <strong>francophone</strong> sur R, ouverte a tous et notamment aux debutants. Pour rejoindre cette comunaute il faut se diriger <a href="https://join.slack.com/t/r-grrr/shared_invite/zt-46utbgb9-uvo_bg5cbuxOV~H10YUX8w">ici</a>. L’inscription a Slack peut faire un peu peur pour ceux qui ne sont pas trop a l’aise avec les nouvelles technologies du web, mais cela vaut la peine de s’y pencher, car cette comunaute est tres dynamique !</p>
 <p><strong>Stack Overflow</strong></p>
-<p>Stack Overflow is one of the best places to ask questions as proved by the number of times you’ll end up on the site when you search for solutions. It is not a platform specific to R though, so make sure you tag your question as <code>R</code>. If you plan to post your question there, read carefully their <a href="https://stackoverflow.com/help/how-to-ask" target="_blank">How to ask a good question</a> page, to increase your chance of getting good responses and help the people who will try to answer your question. And while we’re there, have a look at their R tag’s <a href="https://stackoverflow.com/tags/r/info" target="_blank">about page</a> which contains a lot of links to useful resources related to R.</p>
-<p>Also note that if you have questions related to Statistics or Data Science, you can ask these at their sister site <a href="https://stats.stackexchange.com" target="_blank">Cross Validated</a>!</p>
-<p><strong>RStudio Community</strong></p>
-<p>In recent years, the RStudio community <a href="https://community.rstudio.com" target="_blank">discussion board</a> has become another popular place to ask questions about R. If your problem is directly related to RStudio or any of the tidyverse packages, that’s probably the best place to ask your question. Like for the other platforms, you should read and follow the guidelines of the <a href="https://community.rstudio.com/t/welcome-to-the-rstudio-community/" target="_blank">Welcome page</a> before posting.</p>
-<p><strong>People around you</strong></p>
-<p>What is nice with posting questions online is that you’re helping the R community. But if somehow the above doesn’t work for you, you can always ask around you. R is quite popular nowadays, so surely some colleagues or friends should be able to help. And the other people who are taking part in this course may also be happy to help. If you don’t manage to get help with all of that, it’s probably that you’re not asking your question well. Go back to the R-help or Stack Overflow guides on posting questions and try again!</p>
+<p>Si vous etes un peu a l’aise avec l’Anglais, Stack Overflow est l’un des meilleurs endroits pour poser des questions. C’est probablement l’endroit ou je trouve le plus de reponses a mes questions liees a R. Ce n’est pas une plate-forme spécifique à R, alors assurez-vous de marquer votre question comme «R». Si vous prévoyez d’y publier votre question, lisez attentivement leur page <a href="https://stackoverflow.com/help/how-to-ask" target="_blank"> How to ask a good question </a> , pour augmenter vos chances d’obtenir de bonnes réponses et aider les personnes qui essaieront de répondre à votre question. Et pendant que nous y sommes, jetez un œil <a href="https://stackoverflow.com/tags/r/info" target="_blank"> cette page </a> qui contient de nombreux liens vers des ressources utiles liées à R.</p>
+<p>Notez également que si vous avez des questions liées aux statistiques ou à la Data Science, vous pouvez les poser sur leur site sœur <a href="https://stats.stackexchange.com" target="_blank">Cross Validated</a>.</p>
+<p><strong>Communaute RStudio</strong></p>
+<p>Ces dernières années, le <a href="https://community.rstudio.com" target="_blank"> forum de discussion </a> de la communauté RStudio est devenu un autre endroit populaire pour poser des questions sur R pour ceux qui sont a l’aise avec l’anglais. Si votre problème est directement lié à RStudio ou à l’un des packages tidyverse, c’est probablement le meilleur endroit pour poser votre question. Comme pour les autres plates-formes, pensez a bien lire et suivre les directives de la <a href="https://community.rstudio.com/t/welcome-to-the-rstudio-community/" target="_blank"> Page de bienvenue </a> avant de poser une question.</p>
 </div>
-<div id="section-appendix-the-datasets" class="section level2">
-<h2>Appendix: The datasets</h2>
-<p>In this session, we are using two datasets from fictive 2019 and 2020 interviews where farmers were asked weather they would accept to participate in a new experiment.</p>
-<p>A summary of the columns is given below.</p>
-<p><strong>‘interview2019’ dataset</strong></p>
+<div id="section-appendix-les-donnees" class="section level2">
+<h2>Appendix: Les donnees</h2>
+<p>Dans cette session, nous utilisons deux jeux de données relatifs a des entretiens fictifs de 2019 et 2020 où les agriculteurs ont été invités à indiquer s’ils accepteraient de participer ou non à une nouvelle expérience.</p>
+<p>La description des colonnes est donné ci-dessous.</p>
+<p><strong>Jeu de donnees ‘interview2019’</strong></p>
 <table>
+<colgroup>
+<col width="9%" />
+<col width="90%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Column</th>
@@ -262,20 +254,24 @@ interview %&gt;%
 <tbody>
 <tr class="odd">
 <td align="left">Name</td>
-<td align="left">Name of farmer</td>
+<td align="left">Nom de l’agriculteur</td>
 </tr>
 <tr class="even">
 <td align="left">Gender</td>
-<td align="left">Gender of Farmer</td>
+<td align="left">Sexe de l’agriculteur</td>
 </tr>
 <tr class="odd">
 <td align="left">Accept</td>
-<td align="left">Would you accept to participate in a new experiment</td>
+<td align="left">Accepteriez-vous de paticiper a une nouvelle etude experimentalle ?</td>
 </tr>
 </tbody>
 </table>
-<p><strong>‘interview2020’ dataset</strong></p>
+<p><strong>Jeu de donnees ‘interview2020’</strong></p>
 <table>
+<colgroup>
+<col width="9%" />
+<col width="90%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Column</th>
@@ -285,34 +281,32 @@ interview %&gt;%
 <tbody>
 <tr class="odd">
 <td align="left">Name</td>
-<td align="left">Name of farmer</td>
+<td align="left">Nom de l’agriculteur</td>
 </tr>
 <tr class="even">
 <td align="left">Age</td>
-<td align="left">Age of farmer</td>
+<td align="left">Age de l’agriculteur</td>
 </tr>
 <tr class="odd">
 <td align="left">Region</td>
-<td align="left">Region where the farm is located</td>
+<td align="left">Localisation de la ferme</td>
 </tr>
 <tr class="even">
 <td align="left">Accept</td>
-<td align="left">Would you accept to participate in a new experiment</td>
+<td align="left">Accepteriez-vous de paticiper a une nouvelle etude experimentalle ?</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="section-appendix-useful-reference-links" class="section level2">
-<h2>Appendix: Useful reference links</h2>
-<p>Google: <a href="https://www.google.co.uk/" target="_blank">https://www.google.co.uk/</a></p>
+<div id="section-appendix-liens-utiles" class="section level2">
+<h2>Appendix: Liens utiles</h2>
+<p>Formidable liste de liens francophones lies a R ! <a href="https://github.com/frrrenchies/frrrenchies/" target="_blank">https://github.com/frrrenchies/frrrenchies/</a></p>
 <p>Rseek: <a href="https://rseek.org/" target="_blank">https://rseek.org/</a></p>
-<p>How to avoid common mistakes in R - Coding Club<a href="https://ourcodingclub.github.io/tutorials/troubleshooting/" target="_blank">https://ourcodingclub.github.io/tutorials/troubleshooting/</a></p>
-<p>R-help mailing list: <a href="https://stat.ethz.ch/mailman/listinfo/r-help" target="_blank">https://stat.ethz.ch/mailman/listinfo/r-help</a></p>
-<p>Stack Overflow’s R tag about page: <a href="https://stackoverflow.com/tags/r/info" target="_blank">https://stackoverflow.com/tags/r/info</a></p>
+<p>Comment eviter les erreurs les plus communes en R - Coding Club<a href="https://ourcodingclub.github.io/tutorials/troubleshooting/" target="_blank">https://ourcodingclub.github.io/tutorials/troubleshooting/</a></p>
+<p>Page “A propos de R” de Stack Overflow: <a href="https://stackoverflow.com/tags/r/info" target="_blank">https://stackoverflow.com/tags/r/info</a></p>
 <p>Cross Validated: <a href="https://stats.stackexchange.com" target="_blank">https://stats.stackexchange.com</a></p>
-<p>RStudio community discussion board: <a href="https://community.rstudio.com" target="_blank">https://community.rstudio.com</a></p>
-<p>Help for R website: <a href="http://search.r-project.org" target="_blank">http://search.r-project.org</a></p>
-How to ask a good question - Stack Overflow: <a href="https://stackoverflow.com/help/how-to-ask" target="_blank">https://stackoverflow.com/help/how-to-ask</a> 
+<p>Forum de discussion de la communaute RStudio : <a href="https://community.rstudio.com" target="_blank">https://community.rstudio.com</a></p>
+
 <script type="application/shiny-prerendered" data-context="server-start">
 library(learnr)
 library(tidyverse)
